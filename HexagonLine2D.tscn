@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://HexagonLine2D.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 196.77
+margin_top = 36.9995
+margin_right = 196.77
+margin_bottom = 36.9995
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lineA" type="Line2D" parent="."]
+points = PoolVector2Array( 150, 0, 350, 500 )
+width = 1.0
+
+[node name="lineB" type="Line2D" parent="."]
+points = PoolVector2Array( 350, 0, 150, 500 )
+width = 1.0
+default_color = Color( 0.4, 1, 0.607843, 1 )
+
+[node name="lineC" type="Line2D" parent="."]
+points = PoolVector2Array( 0, 250, 500, 250 )
+width = 2.0
+default_color = Color( 1, 0.4, 0.4, 1 )
+
+[node name="LineMover" type="Line2D" parent="."]
+width = 5.0
+default_color = Color( 0.737255, 0.752941, 0.196078, 1 )
